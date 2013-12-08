@@ -15,5 +15,4 @@ There were 2 main drivers to build this up:
 ### v1
 Basic [HTML5 Boilerplate](http://html5boilerplate.com) repo at Github.
 Behaviour implemented with bare minimum JQuery.
-
-
+[Highlight JQuery-UI effect](http://api.jqueryui.com/highlight-effect/) for right and wrong answers.
