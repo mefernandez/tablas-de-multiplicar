@@ -29,26 +29,30 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <form id="form-pregunta" onsubmit="comprobar(this); return false;">
-        <label name="pregunta" id="pregunta" for="respuesta"></label>
-        <input type="number" pattern="[0-9]{1,2}" name="respuesta" id="respuesta" size="2" maxlength="2" tabindex="1"/>
-        <span id="estado">?</span>
-    </form>
-
-    <section id="seccion-historial">
-        <h1>Resultados</h1>
-        <form id="form-resultados">
-            <input id="cuantas-bien" readonly="readonly" value="0" size="3"/>
-            <label for="cuantas-bien" >&#10003;</label>
-            <input id="cuantas-mal" readonly="readonly" value="0" size="3"/>
-            <label for="cuantas-mal" >&#10005;</label>
+    <div class="column container">
+        <form id="form-pregunta" onsubmit="comprobar(this); return false;" class="center column">
+            <label name="pregunta" id="pregunta" for="respuesta"></label>
+            <input type="number" pattern="[0-9]{1,2}" name="respuesta" id="respuesta" size="2" maxlength="2" autofocus/>
+            <span id="estado">?</span>
         </form>
-        <div id="historial">
-        </div>
-    </section>
 
-    <section id="resultados-tablas">
-    </section>
+        <section id="seccion-historial" class="right column">
+            <h1>Resultados</h1>
+            <form id="form-resultados">
+                <input id="cuantas-bien" readonly="readonly" value="0" size="3"/>
+                <label for="cuantas-bien" >&#10003;</label>
+                <input id="cuantas-mal" readonly="readonly" value="0" size="3"/>
+                <label for="cuantas-mal" >&#10005;</label>
+            </form>
+            <div id="historial">
+            </div>
+        </section>
+
+        <section id="resultados-tablas" class="left column">
+            <ul>
+            </ul>
+        </section>
+    </div>
 
     <footer>
         <p>This project is maintained by <a href="https://github.com/mefernandez">mefernandez</a></p>
@@ -59,6 +63,7 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
     <script src="js/vendor/jquery-ui.min.js" type="text/javascript"></script>
     <script src="js/plugins.js"></script>
+    <script src="src/Pregunta.js"></script>
     <script src="js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
