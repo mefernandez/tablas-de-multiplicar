@@ -1,6 +1,7 @@
 # What is this?
 
-A web page that asks random multiplications questions and checks the answer.
+A web page that asks random multiplication questions and checks the answer.
+Visit it at [http://mefernandez.github.io/tablas-de-multiplicar]
 
 ## Why?
 
